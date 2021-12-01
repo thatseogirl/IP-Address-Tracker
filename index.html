@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <main class="container">
+        <div class="tracker" >
+            <header>
+                <p> IP Address Tracker</p>
+                    <input type="search" class="form-control-sm" id="exampleFormControlInput1" placeholder="Search for any IP address or domain">
+                <button id="search_btn" type="button" class="btn btn-dark">
+                    <img src="images/icon-arrow.svg" class="img-fluid" alt="arrow">
+                </button> 
+            </header>
+
+            <div class="row align-items-start bg-light rounded-end">
+                <div class="col">
+                      <small class="title">IP ADDRESS</small>
+                      <p><strong id="address">192.212.14.101</strong></p>
+                      <h2 class="vl"></h2>
+                </div>
+                
+                    <div class="col">
+                        <small class="title">LOCATION</small>
+                        <p><strong id="current-location">Brooklyn, NY <br> 10001</strong></p>
+                        <h2 class="vl"></h2>
+                    </div>
+                  
+                <div class="col">
+                    <small class="title">TIMEZONE</small>
+                    <p><strong id="time">UTC -<time>05:00</time></strong></p>
+                    <h2 class="vl"></h2>
+                </div>
+                
+                <div class="col">
+                    <small class="title">ISP</small>
+                    <p><strong id="space">SpaceX <br>Starlink</strong></p>
+                </div>
+                
+            </div>
+
+        </div>
+        
+<!--Map-->
+        <div id="map">
+            <img src="images/icon-location.svg" alt="">
+        </div>
+      
+    </main>
+    <script src="app.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDstBm79cjNRdIpdQ94zTapwefETtyfG6A&callback=initMap">
+    </script>
+    
+    
+</body>
+</html>

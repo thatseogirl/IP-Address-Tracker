@@ -1,0 +1,117 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+header{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: whitesmoke;
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+.tracker{
+    background-image: url(./images/pattern-bg.png);
+    background-repeat: no-repeat;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+#exampleFormControlInput1{
+    position: relative;
+    width: 380px;
+    height: 40px;
+    bottom: 3px;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid white;
+}
+.btn {
+    border-radius: 0px 10px 10px 0px;
+    border: 2px;
+    position: relative;
+    right: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+.rounded-end{
+    position: relative;
+    margin: auto;
+    top: 80px;
+    width: 70%;
+    height: 110px;
+    border-radius: 25px 25px 25px 10px;
+    border: 2px;
+    z-index: 3;
+}
+.col{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+small{
+    font-family: 'Rubik', sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 3em;
+    position: relative;
+    top: 20px;
+}
+strong{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: none;
+    position: relative;
+    top: 20px;
+}
+.vl{
+    border-right: 1px solid;
+    height: 60px;
+    position: absolute;
+    left: 98%;
+    margin-left: -3px;
+    top: 30px;
+}
+#map {
+    background-image: url(./images/icon-location.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+       
+  }
+  @media only screen and (min-width: 360px) and (max-width: 640px) { 
+      .container{
+          width: 100%;
+          height: 100%;
+      }
+      h2{
+          display: none;
+      }
+    #exampleFormControlInput1 {
+        width: 200px;
+        height: 50px;
+        position: relative;
+    }
+    .btn{
+        height: 50px;
+        position: relative;
+    }
+    .rounded-end{
+        display: block;
+        position: relative;
+        top:40px;
+        text-align: center;
+        width: 60%;
+        height: 350px;
+        border-radius: 10px;
+        border: 2px;
+        margin: auto;
+      }
+   }
